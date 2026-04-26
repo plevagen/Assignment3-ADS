@@ -57,10 +57,10 @@ public class Experiment {
             }
 
             long timeSelectionRandom = measureSortTime(randomArr, "basic");
-            System.out.println("Selection Sort" + timeSelectionRandom + "ns");
+            System.out.println("Selection Sort: " + timeSelectionRandom + "ns");
 
             long timeQuickRandom = measureSortTime(randomArr, "advanced");
-            System.out.println("Quick Sort" + timeQuickRandom + "ns");
+            System.out.println("Quick Sort: " + timeQuickRandom + "ns");
 
             int[] sortedForSearch = sorter.copyArray(randomArr);
             sorter.advancedSort(sortedForSearch);
@@ -80,17 +80,17 @@ public class Experiment {
             }
 
             long timeSelectionSorted = measureSortTime(sortedArr, "basic");
-            System.out.println("Selection Sort" + timeSelectionSorted + "ns");
+            System.out.println("Selection Sort: " + timeSelectionSorted + "ns");
 
             long timeQuickSorted = measureSortTime(sortedArr, "advanced");
-            System.out.println("Quick Sort" + timeQuickSorted + "ns");
+            System.out.println("Quick Sort: " + timeQuickSorted + "ns");
 
-            System.out.println("Binary Search(looking" + target + "):");
+            System.out.println("Binary Search(looking: " + target + "):");
             long timeSearchSorted = measureSearchTime(sortedArr, target);
-            System.out.println("Binary Search" + timeSearchSorted + "ns");
+            System.out.println("Binary Search: " + timeSearchSorted + "ns");
 
             System.out.println("Comparison");
-            System.out.printf("  %-20s %-20s %-20s%n", "Алгоритм", "Случайный", "Отсортированный");
+            System.out.printf("  %-20s %-20s %-20s%n", "Algorithm", "Random", "Sorted");
             System.out.printf("  %-20s %-20d %-20d%n", "Selection Sort", timeSelectionRandom, timeSelectionSorted);
             System.out.printf("  %-20s %-20d %-20d%n", "Quick Sort",     timeQuickRandom,     timeQuickSorted);
             System.out.printf("  %-20s %-20d %-20d%n", "Binary Search",  timeSearchRandom,    timeSearchSorted);

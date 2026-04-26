@@ -23,10 +23,10 @@ public class Main {
 
         int target = demoForQuick[5];
         int foundIndex = searcher.search(demoForQuick, target);
-        System.out.println("Binary search: looking" + target + "-> index" + foundIndex);
+        System.out.println("Binary search: looking " + target + "-> index: " + foundIndex);
 
         int notFound = searcher.search(demoForQuick, -999);
-        System.out.println("Binary search: index " + notFound + "is not found");
+        System.out.println("Binary search: looking 999 -> index " + notFound + " is not found");
 
         System.out.println();
         experiment.runAllExperiments();
