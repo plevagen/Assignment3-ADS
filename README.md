@@ -140,5 +140,8 @@ c) Binary Search: 1578 ns
 E. ANALYSIS
 -
 
+1) For working with a small array, selection sorting is best (As can be seen from the results, the time to perform selection sorting is 2 times faster than fast (5648 ns versus 6831 for a random array and 2439 ns versus 4647 for a sorted one)). However, for medium and large arrays, it is better to use quick sort. The complexity of the selection sort is O(n^2) everywhere, while the quick sort is O(nlogn)
+2) Selection Sort slows down dramatically — doubling the array size roughly quadruples the time. Quick Sort scales much better — doubling the size only doubles the time (approximately).
+3) 
 
 
