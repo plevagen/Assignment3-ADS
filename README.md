@@ -93,6 +93,9 @@ b) Quick Sort: 32 790 ns
 
 c) Binary Search: 1242 ns
 
+![size10(1).png](docs/screenshots/size10%281%29.png)
+![size10(2).png](docs/screenshots/size10%282%29.png)
+
 ---
 
 1.2. Type: Sorted
@@ -102,6 +105,8 @@ a) Selection Sort: 109 741 ns
 b) Quick Sort: 191 197 ns
 
 c) Binary Search: 1185 ns
+
+![size100.png](docs/screenshots/size100.png)
 
 ---
 
@@ -128,4 +133,6 @@ a) Selection Sort: 10 167 712 ns
 b) Quick Sort: 497 601 ns
 
 c) Binary Search: 1578 ns
+
+![size1000.png](docs/screenshots/size1000.png)
 
