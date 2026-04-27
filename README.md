@@ -55,7 +55,7 @@ Worst Case - O(logn)
 C. EXPERIMENTAL RESULTS
 -
 
-Tests run on: Random arrays and Pre-sorted arrays. 
+Tests run on: Random arrays and Sorted arrays. 
 
 Sizes: 10, 100, 1000.
 
