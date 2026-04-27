@@ -137,6 +137,8 @@ c) Binary Search: 1578 ns
 ![size1000.png](docs/screenshots/size1000.png)
 
 
-E. REFLECTION SECTION
+E. ANALYSIS
 -
+
+
 
