@@ -59,6 +59,56 @@ Tests run on: Random arrays and Pre-sorted arrays.
 
 Sizes: 10, 100, 1000.
 
+---
+1. Array size: 10
 
+---
+1. Type: Random 
+
+a) Selection Sort: 5014 ns
+
+b) Quick Sort: 10 454 ns
+
+c) Binary Search: 2211 ns
+
+---
+1.1 Type: Sorted
+
+a) Selection Sort: 2397 ns
+
+b) Quick Sort: 4571 ns
+
+c) Binary Search: 1201 ns
+
+---
+
+2. Array Size: 100
+
+---
+1.Type: Random
+
+a) Selection Sort: 76 543 ns
+
+b) Quick Sort: 21 729 ns
+
+c) Binary Search: 1042 ns
+
+---
+
+1.2. Type: Sorted
+
+a) Selection Sort: 72 897 ns
+
+b) Quick Sort: 166 723 ns
+
+c) Binary Search: 985 ns
+
+---
+
+3. Array Size: 1000
+
+---
+
+1. Type: Random
 
 
