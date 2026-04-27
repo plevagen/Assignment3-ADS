@@ -1,7 +1,7 @@
 # Assignment3-ADS
 
 A. PROJECT OVERVIEW:
-
+-
 The project implements and compares 3 algorithms:
 1) Selection Sort - a basic simple algorithm that works slowly with large data. The difficulty - O(n^2)
 2) Quick sort - one of the most efficient and used sorting algorithms. Difficulty - O(nlogn)
@@ -9,8 +9,9 @@ The project implements and compares 3 algorithms:
 
 The purpose of this experiment is to run algorithms and compare their performance in different array sizes and input data.
 
+---
 B. ALGORITHM DESCRIPTIONS:
-
+-
 1. Selection Sort:
 
 How it works: The algorithm divides the array into two parts: sorted (at the beginning) and unsorted. At each step, 
@@ -27,4 +28,37 @@ Worst Case - O(n^2)
 
 2. Quick Sort:
 
-How it works: 
+How it works: The algorithm is of the "Divide and conquer" type (that is, splitting the problem into 2, smaller subtasks and splitting until the elements become basic, then a combined solution and combining the results of the subtasks). A pivot is selected from the array. The elements that are smaller than the pivot are shifted to the left, and those that are larger are shifted to the right. Then apply this approach until the sorting is complete.
+
+Time Complexity:
+
+Best Case - O(nlogn)
+
+Middle Case - O(nlogn)
+
+Worst Case - O(n^2)
+
+3. Binary Search
+
+How it works: It works on the principle of "Divide and conquer". The middle element in the array is selected. If the middle element is equal to the one you are looking for, then the search ends. If the search is less than the average, the search is in the left half, if it is more, in the right half. It runs until the desired value is found.
+
+Time Complexity:
+
+Best Case - O(1)
+
+Middle Case - O(logn)
+
+Worst Case - O(logn)
+
+---
+
+C. EXPERIMENTAL RESULTS
+-
+
+Tests run on: Random arrays and Pre-sorted arrays. 
+
+Sizes: 10, 100, 1000.
+
+
+
+
