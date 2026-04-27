@@ -142,6 +142,13 @@ E. ANALYSIS
 
 1) For working with a small array, selection sorting is best (As can be seen from the results, the time to perform selection sorting is 2 times faster than fast (5648 ns versus 6831 for a random array and 2439 ns versus 4647 for a sorted one)). However, for medium and large arrays, it is better to use quick sort. The complexity of the selection sort is O(n^2) everywhere, while the quick sort is O(nlogn)
 2) Selection Sort slows down dramatically — doubling the array size roughly quadruples the time. Quick Sort scales much better — doubling the size only doubles the time (approximately).
-3) 
+3) Selection Sort performs identically on both — it always scans the full unsorted part. Quick Sort can degrade on already-sorted arrays when using a naive pivot (last element) because the pivot is always the maximum, creating unbalanced partitions (worst case O(n²)).
+4) Yes. Selection Sort shows roughly 100× slowdown from n = 100 to n = 1000 (10^2 = 100), while Quick Sort shows only ~10× slowdown (10log10 ≈ 10×).
+5) Binary Search works by eliminating half the remaining elements at each step — it can only do this if it knows which half contains the target. In an unsorted array, knowing the middle element is smaller than the target tells us nothing about where the target is.
 
+F. REFLECTION
+-
 
+I've learned that Big-O notation is very important when implementing algorithms. Selecting Sort is easy to understand and implement, but the speed difference becomes apparent when you test it on 1000 items compared to Quick sort.
+It is also worth noting my surprise when I realized that advanced sorting can be slower than simple sorting if we work with small data. This suggests that in practice, constants and data sizes should also be taken into account when working with sorting algorithms.
+When writing Quick Sort, I ran into the problem that I need to correctly implement the steps of partitioning arrays and transferring copies of arrays to the algorithm. It was necessary for fair results.
