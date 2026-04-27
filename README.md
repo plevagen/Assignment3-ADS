@@ -65,20 +65,20 @@ Sizes: 10, 100, 1000.
 ---
 1. Type: Random 
 
-a) Selection Sort: 5014 ns
+a) Selection Sort: 5648 ns
 
-b) Quick Sort: 10 454 ns
+b) Quick Sort: 6831 ns
 
-c) Binary Search: 2211 ns
+c) Binary Search: 2494 ns
 
 ---
 1.1 Type: Sorted
 
-a) Selection Sort: 2397 ns
+a) Selection Sort: 2439 ns
 
-b) Quick Sort: 4571 ns
+b) Quick Sort: 4647 ns
 
-c) Binary Search: 1201 ns
+c) Binary Search: 1260 ns
 
 ---
 
@@ -87,21 +87,21 @@ c) Binary Search: 1201 ns
 ---
 1.Type: Random
 
-a) Selection Sort: 76 543 ns
+a) Selection Sort: 110 676 ns
 
-b) Quick Sort: 21 729 ns
+b) Quick Sort: 32 790 ns
 
-c) Binary Search: 1042 ns
+c) Binary Search: 1242 ns
 
 ---
 
 1.2. Type: Sorted
 
-a) Selection Sort: 72 897 ns
+a) Selection Sort: 109 741 ns
 
-b) Quick Sort: 166 723 ns
+b) Quick Sort: 191 197 ns
 
-c) Binary Search: 985 ns
+c) Binary Search: 1185 ns
 
 ---
 
@@ -111,4 +111,21 @@ c) Binary Search: 985 ns
 
 1. Type: Random
 
+---
+
+a) Selection Sort: 3 697 917 ns
+
+b) Quick Sort: 176 495 ns
+
+c) Binary Search: 1602 ns
+
+---
+
+1.2. Type: Sorted
+
+a) Selection Sort: 10 167 712 ns
+
+b) Quick Sort: 497 601 ns
+
+c) Binary Search: 1578 ns
 
